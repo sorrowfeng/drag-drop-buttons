@@ -104,6 +104,7 @@ void ShowPart::mousePressEvent(QGraphicsSceneMouseEvent *event)
             qDebug() << "Clicked : " << type_;
         }
     } else if (event->button() == Qt::RightButton) {
+        color_ = Qt::lightGray;
         type_.clear();
         pixmap_ = QPixmap();
         update();
